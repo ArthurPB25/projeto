@@ -6,28 +6,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    font-family: "Inter", sans-serif; /* Fonte padrão */
-    background-color: #f8f9fa; /* Cor de fundo suave */
+    font-family: "Inter", sans-serif; 
+    background-color: #f8f9fa;
 }
-
+/*tem uma diferena da empresa de 6px a mais*/
 #escola{
     font-family: "Inria Serif", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
 }
-
+/*tem uma diferena da escola de 6px a menos*/
 #empresa{
     font-family: "inter";
     font-weight: 400;
     color: #B4B4B5;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 10px;
 }
 
 .cabecario{
     display: flex;
-    gap: 10px;
+    gap: 50px 10px;
     align-items: center;
 }
 
+/* diferença de 9px*/
+#logo_escola{
+    width: 155px;
+    height: 145px;
+}
+
+#materia{
+    font-size: 20px;
+}
+
+#calendario{
+    width: 47px;
+    height: 51px;
+    background-color: #DDD9C5;
+    border-radius: 10px;
+}
+
+#calendario_svg{
+    width: 24px;
+}
