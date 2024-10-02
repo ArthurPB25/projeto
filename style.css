@@ -1,3 +1,33 @@
 *{
     background-color: #EEEEEE;
 }
+
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif; /* Fonte padrão */
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+#escola{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#empresa{
+    font-family: "inter";
+    font-weight: 400;
+    color: #B4B4B5;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.cabecario{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
