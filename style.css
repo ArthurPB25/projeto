@@ -9,40 +9,40 @@ body {
 /*tem uma diferena da empresa de 6px a mais*/
 #escola{
     font-family: "Inria Serif", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
 }
 /*tem uma diferena da escola de 6px a menos*/
 #empresa{
     font-family: "inter";
     font-weight: 400;
     color: #B4B4B5;
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 112.5%;
 }
 
 .cabecario{
     display: flex;
-    gap: 50px 10px;
+    gap: 0.5%;
     align-items: center;
+    margin-top: 0%;
 }
 
 /* diferença de 9px*/
 #logo_escola{
-    width: 155px;
-    height: 145px;
+    width: 7%;
+    height: 12%;
 }
 
 /*diferença de 106*/
 .tela{
     background-color: #F0F0F0;
-    width: 1500px;
-    height: 793px;
+    width: 75%;
+    height: 76.15%;
     border-radius: 10px 10px 0px 0px;
     position: fixed;
     bottom: 0;
-    left: 90px;
+    left: 7%;
 }
 
 .titulo_pagina{
@@ -51,16 +51,19 @@ body {
 }
 
 #Calendario {
-    width: 50px;
-    height: 50px;
+    width: 2%;
+    height: 1.5%;
     background-color: #DDD9C5; 
-    border-radius: 10px; 
-    align-items: center;
-    display: flex; /* Ativa o flexbox */
+    border-radius: 10%; 
+    display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 1%;
+    margin-top: 3.85%;
+    margin-left: 0.5%;
 }
 #calendario_svg{
     width: 24px;
     height: 24px;
+    
 }
