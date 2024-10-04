@@ -10,27 +10,61 @@ body {
     width: 10%;
 }
 
-/*Cabeçalho*/
+/*
+Cabeçalho
+*/
 .cabeçalho{
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    padding: 0.5rem;
     flex-direction: row ;
+    gap:  1rem;
 }
 
 /*imagem*/
 #logo_escola{
-    width: 8%;
-    height: auto;
+    width: 5%;
+    max-width: 120px;
 }
 
-.cabeçalho h1{
+/*Títulos*/
+#escola{
     font-family: "serif";
     font-size: 150%;
 }
 
-.cabeçalho h2{
+#empresa{
     font-size: 125%;
     color: #B4B4B5;
+}
+
+/*
+Calendario
+*/
+
+.Calendario{
+    display: flex;
+    background-color: #ddd9c5;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Tela central
+*/
+
+.atividade{
+    background-color: #F0F0F0;
+    width: 65em;
+    height: 55em;
+}
+
+.titulo_tela{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
