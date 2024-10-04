@@ -6,64 +6,31 @@ body {
     font-family: "Inter", sans-serif; 
     background-color: #FFFFFF;
 }
-/*tem uma diferena da empresa de 6px a mais*/
-#escola{
-    font-family: "Inria Serif", serif;
-    font-weight: 500;
-    font-style: normal;
+.img{
+    width: 10%;
+}
+
+/*Cabeçalho*/
+.cabeçalho{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    flex-direction: row ;
+}
+
+/*imagem*/
+#logo_escola{
+    width: 8%;
+    height: auto;
+}
+
+.cabeçalho h1{
+    font-family: "serif";
     font-size: 150%;
 }
-/*tem uma diferena da escola de 6px a menos*/
-#empresa{
-    font-family: "inter";
-    font-weight: 400;
+
+.cabeçalho h2{
+    font-size: 125%;
     color: #B4B4B5;
-    font-size: 112.5%;
-}
-
-.cabecario{
-    display: flex;
-    gap: 0.5%;
-    align-items: center;
-    margin-top: 0%;
-}
-
-/* diferença de 9px*/
-#logo_escola{
-    width: 7%;
-    height: 12%;
-}
-
-/*diferença de 106*/
-.tela{
-    background-color: #F0F0F0;
-    width: 75%;
-    height: 76.15%;
-    border-radius: 10px 10px 0px 0px;
-    position: fixed;
-    bottom: 0;
-    left: 7%;
-}
-
-.titulo_pagina{
-    font-size: 20px;
-    
-}
-
-#Calendario {
-    width: 2%;
-    height: 1.5%;
-    background-color: #DDD9C5; 
-    border-radius: 10%; 
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 1%;
-    margin-top: 3.85%;
-    margin-left: 0.5%;
-}
-#calendario_svg{
-    width: 24px;
-    height: 24px;
-    
 }
