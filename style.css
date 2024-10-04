@@ -5,6 +5,8 @@
 body {
     font-family: "Inter", sans-serif; 
     background-color: #FFFFFF;
+    overflow: hidden;
+    margin: 0;
 }
 .img{
     width: 10%;
@@ -20,6 +22,7 @@ Cabeçalho
     padding: 0.5rem;
     flex-direction: row ;
     gap:  1rem;
+    position: fixed;
 }
 
 /*imagem*/
@@ -51,6 +54,8 @@ Calendario
     border-radius: 10%;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 9em;
 }
 
 /*
@@ -60,7 +65,10 @@ Tela central
 .atividade{
     background-color: #F0F0F0;
     width: 65em;
-    height: 55em;
+    height: 50em;
+    left: 43em;
+    bottom: 0;
+    position: relative;
 }
 
 .titulo_tela{
