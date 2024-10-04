@@ -6,10 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+    
+    <div class="tela">
+        
         <div class="login">
+            
             <div id="box">
-                <h1 id="titulo"><b>Iniciar</b></h1>
+                
+                <div id="tituloo">
+                    <h1 id="titulo"><b>Iniciar</b></h1>
+
+                </div>
+                <div id="formulariop">
+                <form>
+                    <input type="text">
+                </form>                
+                </div>
+               
+                
             </div>            
         </div>
         <div id="imagem" >
@@ -19,11 +33,11 @@
     </div>
 
     </div>
-    <div id="screen">
+    
         
             
 
-        </div>
+        
     </div>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -34,7 +48,19 @@
         overflow: hidden;
         
       }
-      .header{
+      #tituloo{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+      }
+      #formulairop{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .tela{
         display:flex;
      
         margin: 0;
@@ -73,17 +99,19 @@
         font-family: "Istok Web", sans-serif;
         font-weight: 800px;
         font-style: normal;
+        font-size: 300%
         
       }
        #box{
         display:flex;
-        justify-content:flex-start;
-        align-items: center;
-        width:80%;
-        height:80vh;
+        
+        width:90%;
+        height:50vh;
         border:2px solid black;
        
        }
+       
+       
        
 
         
