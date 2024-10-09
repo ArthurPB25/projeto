@@ -4,117 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
+  
+  <div class="tela">
     
-    <div class="tela">
-        
-        <div class="login">
-            
-            <div id="box">
-                
-                <div id="tituloo">
-                    <h1 id="titulo"><b>Iniciar</b></h1>
+    <header class="header">
 
-                </div>
-                <div id="formulariop">
-                <form>
-                    <input type="text">
-                </form>                
-                </div>
-               
-                
-            </div>            
-        </div>
-        <div id="imagem" >
-            <img  id="foto" src="livros.jpg" width="80%" height="90%">
-        </div>
-
-    </div>
-
-    </div>
+    </header>
     
+    <nav class="login">
+      
+      <div class="centro">
+      
+        <h1>Iniciar</h1>
         
-            
-
+        <br>
+        <br>
         
+        <form >
+          <input placeholder="Usuário" class="input" type="text" name="Usuário">
+        </form>
+        
+        
+        <br>
+        <br>
+        
+        
+        <form>
+          <input placeholder="Senha" class="input" type="text" name="Senha">
+        </form>
+      
     </div>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-      body{
-        display: flex;
-        margin:00;
-        padding:00;
-        overflow: hidden;
-        
-      }
-      #tituloo{
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-      }
-      #formulairop{
-        display:flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
-      .tela{
-        display:flex;
-     
-        margin: 0;
-        padding:0;
-        width:100%;
-        height:100vh;
-        background-color:#96C6C2;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-
-      }
-      #imagem{
-        width:50%;
-        height: 90vh ;
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        background-color: #9ECFC9;
-      }
-      .login{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        background-color: aliceblue;
-        width:50%;
-        height: 90vh
-      }
-            
-       #foto{
-        border-radius: 20px;
-       
-      }    
-       
-      #titulo{
-        font-family: "Istok Web", sans-serif;
-        font-weight: 800px;
-        font-style: normal;
-        font-size: 300%
-        
-      }
-       #box{
-        display:flex;
-        flex-direction: column;
-        width:90%;
-        height:50vh;
-        border:2px solid black;
-       
-       }
-       
-       
-       
-
-        
-    </style>
-</body>
-</html>
+    </nav>
+    <nav class="imagem">
+      <img src="livros.jpg">
+      
+    </nav>
+  </div>
