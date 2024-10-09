@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+
+}
+
+.tela{
+    display:grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-areas: 
+    'header header'
+    'login imagem'
+    'footer footer'
+}
+.header{
+    grid-area:header;
+    background: #96C6C2;
+    padding:30px;
+    display:grid;
+    height:10vh;
+    
+}
+
+.imagem{
+    grid-area:imagem;
+    background: #9ECFC9 ;
+    display:grid;
+    height:100vh;
+    justify-content: center;
+    align-content: center;
+    
+}
+.login{
+    display:grid;
+    justify-items: center;
+    align-content: center;
+    
+    
+}
+.centro{
+    display: grid;
+    justify-items: start;
+    align-content: start;
+    margin:40px;
+    width: 50vw;
+    height:50vh;
+}
+
+h1{
+    font-family: "Istok Web", sans-serif;
+    font-weight: 1000px;
+    font-style: normal;
+    font-size: 400%
+}
+
+.input{
+  border-radius:50px;
+  width: 30vw;
+  height:5vh;
+  text-align: center;
+  background-color: #D9D9D9;
+}
