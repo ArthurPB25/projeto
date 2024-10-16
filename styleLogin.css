@@ -19,7 +19,7 @@
     background: #96C6C2;
     padding:30px;
     display:grid;
-    height:10vh;
+    height: 5vh;
     
 }
 
@@ -29,7 +29,8 @@
     display:grid;
     height:100vh;
     justify-content: center;
-    align-content: center;
+    align-content: start;
+    
     
 }
 .login{
@@ -43,7 +44,7 @@
 }
 .centro{
     display: grid;
-    justify-items: start;
+    justify-items: center;
     align-content: center;
    
     width: 40vw;
@@ -54,7 +55,9 @@ h1{
     font-family: "Istok Web", sans-serif;
     font-weight: 1000px;
     font-style: normal;
-    font-size: 300%
+    font-size: 300%;
+    display:flex;
+    justify-content: center;
 }
 
 .input{
@@ -71,6 +74,8 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 10%;
     
 }
 button{
@@ -88,3 +93,26 @@ a{
     font-style: normal;
     font-size: 100%
 }
+.iniciar{
+    width:40vw;
+    height:10vh;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+    
+
+#img{
+    border-radius:40px ;
+    width: 40vw;
+    height: 80vh;
+    margin:40px;
+}
+#logo{
+    width:10%;
+    height:10vh
+}
+
+   
