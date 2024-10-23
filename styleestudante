@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.header{
+display: flex;
+height: 10vh;
+
+
+justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+    
+    width: 30%;
+    height:100%;
+    align-items: center;
+    justify-content: flex-start;
+
+
+   
+}
+.sino{
+ 
+    width: 30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+}
+#escolanome{
+    display: flex;
+    
+}
+.texto{
+
+    background-color: bisque;
+    width: 20%;
+    height:90%;
+
+
+}
+.tela{
+    height:90vh;
+    background-color: blueviolet;
+    display:flex;
+    
+   
+    left: 30px ;
+}
+.painel{
+    display: flex;
+    background-color: rgb(186, 230, 230);
+    height:100%;
+    width:80%;
+    justify-content: space-between;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.modal{
+    background-color: brown;
+    width: 90%;
+    height:100%
+}
+.calendar{
+    padding: 2%;
+    margin:2%;
+    background-color: bisque;
+    border-radius: 10px ;
+    height:3%;
+   
+}
+img{
+    
+}
