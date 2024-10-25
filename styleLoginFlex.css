@@ -1,60 +1,58 @@
-   *{
-    margin:0;
-    padding:0;
-}
-.header{
-    
-    background: #96C6C2;
-    height:15vh;
-
-
-}
-.tela{
-    display:flex;
-    width:100%;
-    height:85vh;
-    flex-wrap: wrap;
-}
-
-.login{
-    width:50%;
-    height:100%;
-    
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleLogin.css">
    
-}
-.livros{
-    width:50%;
-    height:100%;
-    background: #9ECFC9 ;
+</head>
+<body>
+    <div class="header">
 
-}
-.caixa{
-    width:100%;
-    height:90%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: flex-start;    
-    align-items: center;
-    flex-wrap: wrap;
+    </div>
+    <div class=" tela">
+        
+        <div class=" login">
+            
+            <div class="start">
+                
+                <img src="Logo empresa.png" width="100" heght="100">
 
+            </div>
+           <div class="titulo">
+            
+           <h1>Iniciar</h1>
+            
+            </div>
+            
+            <div class="caixa">
+                    
+                    <form id="loginForm">
+                        <!-- Campo para inserir o nome de usuário -->
+                        <input type="text" id="nome" placeholder="Nome de Usuário" required>
+                        <!-- Campo para inserir a senha -->
+                        <input type="password" id="senha" placeholder="Senha" required>
+                        
+            </div>
+            
+            <div class="botao">
+                
+                <button type="submit" class="button">ENTRAR</button>
+            
+            </div>
+           
+            <div class="empresaNome">
+                
+                <p>Episteme</p>
+           
+            </div>
+       
+        </div>
+        <div class="livros">
+            <img id="biblio"src="livros.jpeg" width="800" height="700">
+
+        </div>
+    </div>
+</body>
   
-   
-   
-}
-.empresaNome{
-    display:flex;
-    height:9%;
-    width:100%;
-    border: 2px solid black;
-    justify-content: flex-start;
-    align-items: center;
-}
-input{
-    border-radius:50px;
-    width: 30vw;
-    height:5vh;
-    text-align: center;
-    background-color: #D9D9D9;
-    border:none;
-    margin-top: -16px;
-}
