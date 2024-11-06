@@ -4,34 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista</title>
-</head>
-<body>
-    <button>Adicionar uma lista</button>
-    <dialog>
-        <h1>Lista!</h1>
-        <div class="content">
-            <div class="content--add--item">
-                <input type="text" id="input-new-task" placeholder="Digite sua tarefa">
-                <button id="btn-new-task" title="Clique aqui para adicionar uma tarefa">
-                    +
-                </button>
-            </div>
-            <div class="content--body">
-                <ul id="to-do-list"> </ul>
-            </div>
-        </div>
-        <button id="fechar">Fechar</button>
     <style>
         dialog::backdrop {
-            background-color:rgb(0 0 0 / .3)
+            background-color: rgb(0 0 0 / .3);
         }
         dialog {
             border: none;
-            border-radius: .5ren;
+            border-radius: .5rem;
             box-shadow: 0 0 1em rgb(0 0 0 / .3);
             width: 85%;
-            font-family:"Arial";  
-            background-color:#FFF6E0;
+            font-family: "Arial";  
+            background-color: #FFF6E0;
         }
         .content--add--item {
             display: flex;
@@ -43,70 +26,95 @@
             outline: none;
             padding: 1rem;
         }
-
         #input-new-task {
             width: 20rem;
             border-radius: 1rem;
         }
-
         #btn-new-task {
             background-color: white;
-            border-radius: 50% ;
+            border-radius: 50%;
             width: 50px;
-            height:50px;
+            height: 50px;
             cursor: pointer;
         }
-
         #btn-new-task:hover {
             background-color: rgb(216, 216, 216);
         }
-
-        #to-do-list{
+        #to-do-list {
             padding: 0;
         }
-        #to-do-list li{
-            list-style-type:none;
+        #to-do-list li {
+            list-style-type: none;
             font-size: 1.4rem;
-            text-transform: capitalize;
-        }
-        #ok-button {
-            margin-left:310px; 
-            padding: 5px 10px
+            text-transform: none;
         }
     </style>
+</head>
+<body>
+    <button>Adicionar uma lista</button>
+    <dialog>
+        <h1>Lista!</h1>
+        <div class="content">
+            <div class="content--add--item">
+                <input type="text" id="input-new-task" placeholder="Digite sua tarefa">
+                <button id="btn-new-task" title="Clique aqui para adicionar uma tarefa">+</button>
+            </div>
+            <div class="content--body">
+                <ul id="to-do-list"></ul>
+            </div>
+        </div>
+        <button id="fechar">Fechar</button>
+    </dialog>
+
     <script>
-        const button = document.querySelector("button")
-        const modal = document.querySelector("dialog")
-        const buttonClose = document.querySelector("dialog button")
+        const localStorageKey = 'to-do-list';
+        const button = document.querySelector("button");
+        const modal = document.querySelector("dialog");
+        const buttonClose = document.querySelector("#fechar");
+        const buttonNewTask = document.querySelector("#btn-new-task");
 
         button.onclick = function() {
-            modal.showModal()
+            modal.showModal();
         }
 
         buttonClose.onclick = function() {
-            modal.close()
+            modal.close();
         }
-
-        const localStorageKey = 'lista'
-        const buttonNewTask = document.getElementById("btn-new-task");
 
         buttonNewTask.onclick = function() {
-            let input= document.getElementById('input-new-task')
-            if(!input.value)
-            {
-                alert("Digite algo para adicionar na lista.")
-            }
-            //else if()
-            else
-            {
-                let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
-                values.push({
-                    name: input.value
-                })
-                console.log(values)
+            let input = document.getElementById('input-new-task');
+            if (!input.value) {
+                alert('Digite algo para inserir em sua lista');
+            } else {
+                let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+                values.push({ name: input.value });
+                localStorage.setItem(localStorageKey, JSON.stringify(values));
+                showValues();
+                input.value = ''; // Limpa o campo de entrada
             }
         }
+
+        function showValues()
+{
+    	let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+   	 let list = document.getElementById('to-do-list')
+   	 list.innerHTML = ''
+   	 for(let i = 0; i < values.length; i++)
+    {
+        list.innerHTML += `<li>${values[i]['name']}<button id='btn-ok' onclick='removeItem("${values[i]['name']}")'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg></button></li>`
+    }
+}
+
+function removeItem(data)
+{
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+    let index = values.findIndex(x => x.name == data)
+    values.splice(index,1)
+    localStorage.setItem(localStorageKey,JSON.stringify(values))
+    showValues()
+}
+
+showValues()
     </script>
-    </dialog>
 </body>
 </html>
