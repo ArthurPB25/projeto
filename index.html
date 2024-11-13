@@ -3,57 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
-    <div class="header">
-
-    </div>
-    <div class=" tela">
-        
-        <div class=" login">
-            
+    <div class="header"></div>
+    <div class="tela">
+        <div class="login">
             <div class="start">
-                
-                <img src="Logo empresa.png" width="100" heght="100">
-
+                <img src="Logo empresa.png" width="100" height="100">
             </div>
-           <div class="titulo">
-            
-           <h1>Cadastro</h1>
-            
+            <div class="titulo">
+                <h1>Cadastro</h1>
             </div>
-            
             <div class="caixa">
+                <form id="loginForm">
+                    <!-- Campo para inserir o nome de usuário -->
+                    <input type="text" id="nome" placeholder="Nome" required>
+                     
+                    <!-- Campo para inserir a senha -->
+                    <input type="password" id="senha" placeholder="Senha" required>
                     
-                    <form id="loginForm">
-                        <!-- Campo para inserir o nome de usuário -->
-                        <input type="text" id="nome" placeholder="Nome de Usuário" required>
-                        <!-- Campo para inserir a senha -->
-                        <input type="password" id="senha" placeholder="Senha" required>
-                        <input type="text" id="funcao" placeholder="Função" required>
-                        
-            </div>
+                    <!-- Campo para inserir o CPF -->
+                    <input type="number" id="cpf" placeholder="Insira o CPF" required>
+                    
+                    <select id="escolha" name="funcao" required="required">
+                        <option value="">Escolha sua função</option>
+                        <option value="prof">Professor</option>
+                        <option value="aluno">Aluno</option>
+                    </select>
+                </form>
+            </div>  
             
             <div class="botao">
-                
-                <button type="submit" class="button"><b>CADASTRAR</b></button>
+                <button type="button" id="btnCadastrar" class="button"><b>CADASTRAR</b></button>
+                 <a href="LoginFlex.html"> Ir para a página inicial</a>
+            </div>
             
-            </div>
-           
             <div class="empresaNome">
-                
                 <p>Episteme</p>
-           
             </div>
-       
         </div>
         <div class="livros">
-            <img id="biblio"src="livros.jpg" width="80%" height="80%">
-
+            <img id="biblio" src="livros.jpg" width="80%" height="80%">
         </div>
     </div>
+
+    <script src="cadastro.js"></script>
 </body>
-  
+</html>
