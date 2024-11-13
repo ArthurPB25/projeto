@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\Aluno_DEV\Desktop\projeto\projeto\Login\styleLoginFlex.css">
+    <link rel="stylesheet" href="styleLoginFlex.css">
    
 </head>
 <body>
@@ -17,7 +18,7 @@
             
             <div class="start">
                 
-                <img src="C:\Users\Aluno_DEV\Desktop\projeto\projeto\imagens\Logo empresa.png" width="100" heght="100">
+                <img src="Logo empresa.png" width="100" heght="100">
 
             </div>
            <div class="titulo">
@@ -33,14 +34,22 @@
                         <input type="text" id="nome" placeholder="Nome de Usuário" required>
                         <!-- Campo para inserir a senha -->
                         <input type="password" id="senha" placeholder="Senha" required>
+                        <select id="escolha" name="funcao" required="required">
+                            <option value="funcao">Escolha sua função</option>
+                            <option value="prof">Professor</option>
+                            <option value="aluno">Aluno</option>
+                        </select>
+                    </form>
                         
             </div>
             
             <div class="botao">
                 
-                <button type="submit" class="button">ENTRAR</button>
+                <button type="submit" class="button" id="logar">ENTRAR</button>
             
             </div>
+
+        
            
             <div class="empresaNome">
                 
@@ -50,9 +59,10 @@
        
         </div>
         <div class="livros">
-            <img id="biblio"src="C:\Users\Aluno_DEV\Desktop\projeto\projeto\imagens\livros.jpg" width="800" height="700">
+            <img id="biblio"src="livros.jpg" width="80%" height="80%">
 
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
   
