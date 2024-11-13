@@ -108,3 +108,14 @@ p{
 #biblio{
     border-radius:20px;
 }
+select{
+    margin-top: 5%;
+    display:block;
+    margin-top:3%;
+    border-radius:50px;
+    width: 30vw;
+    height:5vh;
+    text-align: center;
+    background-color: #D9D9D9;
+    border:none;
+}
