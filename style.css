@@ -35,10 +35,10 @@
     height:29.5%;
     
     display:flex;
-    
+    flex-wrap: wrap;
     align-items: flex-start;
     margin-left: 6%;
-    margin-top: 7%;
+    margin-top: 4%;
 
    
    
@@ -97,8 +97,11 @@ p{
 }
 .botao{
     display:flex;
+    flex-wrap: nowrap;
     margin-left: 25%;
     align-items: flex-start;
+    height:50%;
+    margin-top:4%;
 }
 .livros{
     display:flex;
@@ -107,4 +110,15 @@ p{
 }
 #biblio{
     border-radius:20px;
+}
+select{
+    margin-top: 5%;
+    display:block;
+    margin-top:3%;
+    border-radius:50px;
+    width: 30vw;
+    height:5vh;
+    text-align: center;
+    background-color: #D9D9D9;
+    border:none;
 }
