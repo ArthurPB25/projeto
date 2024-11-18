@@ -21,7 +21,7 @@ function fazerLogin() {
     
     
     
-    if (usuarioEncontrado && usuarios.funcao ==='prof') {
+    if (usuarioEncontrado && usuarioEncontrado.funcao ==='prof') {
         // Se o usuário for encontrado, redireciona para uma página de dashboard
         alert('Bem-Vindo, Magnata!');
         window.location.href = "pagina-dashboard.html"; 
