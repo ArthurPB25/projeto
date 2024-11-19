@@ -3,6 +3,7 @@
 // Função para cadastrar as informações
 function cadastrar() {
     // Captura os valores dos campos do formulário
+    console.log("bateu")
     const nome = document.getElementById('nome').value;
     const senha = document.getElementById('senha').value;
     const cpf = document.getElementById('cpf').value;

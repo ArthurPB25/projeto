@@ -26,7 +26,7 @@ function fazerLogin() {
         alert('Bem-Vindo, Magnata!');
         window.location.href = "pagina-dashboard.html"; 
     
-    }else if  (usuarioEncontrado && usuarios.funcao ==='aluno') {
+    }else if  (usuarioEncontrado && usuarioEncontrado.funcao ==='prof') {
         alert('Bem-Vindo, Chefe!');
         window.location.href = "teodolito.html"; 
 
